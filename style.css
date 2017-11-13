@@ -1,0 +1,499 @@
+body {
+  margin: 0;
+  font-size: 16;
+  font-family: sans-serif;
+  width: 100%;
+  border-left: 1px solid #222;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header .topNav {
+  background-color: #666;
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  padding: 2px;
+}
+
+header .topNav a {
+  font-size: .7em;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #FFF;
+  margin-right: 3px;
+}
+
+header .topNav a:last-of-type {
+  margin-left: auto;
+}
+
+header .topNav a:hover {
+  text-decoration: underline;
+}
+
+header main {
+  display: grid;
+  grid-template-columns: 27% 73%;
+  height: 90px;
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 8px;
+}
+
+header main .left {
+  grid: 1;
+  background-color: #EEEEEE;
+  box-sizing: border-box;
+}
+
+header main .right {
+  grid-column: 2;
+  background-color: dodgerblue;
+  box-sizing: content-box;
+  border: 1px solid #000;
+}
+
+header main .left img {
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+header main .right h1 {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+section.headerLow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+section.headerLow a {
+  margin-right: 15px;
+}
+
+section.headerLow a img {
+  width: 90px;
+  height: 30px;
+}
+
+section.headerLow a:last-child img {
+  height: 50px;
+  margin-top: -12px;
+  margin-right: 6px;
+}
+
+main.body {
+  display: grid;
+  grid-template-columns: 10% 30% 25% 35%;
+  grid-gap: 10px;
+  margin: 5px;
+}
+
+main nav.leftSidebar {
+  grid: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: .9em;
+}
+
+main nav.leftSidebar label {
+  font-size: .9em;
+  font-weight: 700;
+}
+
+main nav.leftSidebar button {
+  width: 70px;
+}
+
+main nav.leftSidebar .beforeList {
+  font-weight: bold;
+  font-size: .9em;
+  text-transform: capitalize;
+}
+
+main nav.leftSidebar .beforeList {
+  margin-bottom: 2px;
+}
+
+main nav.leftSidebar .beforeList:first-of-type {
+  margin-top: 20px;
+}
+
+main nav.leftSidebar > ul {
+  margin-top: 0px;
+  list-style: none;
+  font-size: .9em;
+  width: 25%;
+}
+
+main nav.leftSidebar ul a {
+  text-decoration: none;
+}
+
+main nav.leftSidebar ul a:hover {
+  text-decoration: underline;
+}
+
+main nav.leftSidebar ul li {
+  margin-left: -35px;
+  line-height: 20px;
+}
+
+#at {
+  color: #BBB;
+  font-size: .75em;
+}
+
+#imdbLogoMini {
+  width: 30px;
+}
+
+main section.column2 {
+  grid: 2;
+}
+
+.subTitle {
+  font-size: .8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #750404;
+}
+
+main section.column2 .subSection {
+  border-bottom: 1px solid #CCC;
+}
+
+main section.column2 .subSection h2 {
+  color: #750404;
+  border-top: 1px solid #750404;
+  margin: 0;
+}
+
+main section.column2 .subSection h2 + span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+}
+
+main section.column2 .subSection p {
+  font-size: .8em;
+}
+
+main section.column2 > a {
+  margin-top: 10px;
+  float: right;
+  font-family: serif;
+  font-size: .7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+main section.column2 > a:hover {
+  text-decoration: underline;
+}
+
+main section.column2 .subSection:last-of-type {
+  margin-top: 40px;
+}
+
+main section.column2 .vsSection {
+  margin-top: -8px;
+}
+
+main section.column2 .vsSection p {
+  text-align: center;
+}
+
+main section.column2 .vsSection .vsLink {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main section.column2 .vsSection .vsLink:hover {
+  text-decoration: underline;
+}
+
+main section.column2 .filmVs {
+  display: flex;
+  justify-content: space-around;
+}
+
+main section.column2 .filmVs img {
+  width: 100px;
+  height: 120px;
+  margin-top: -8px;
+}
+
+main section.column2 .more {
+  font-weight: 300;
+}
+
+main section.column2 .filmLeft *, main section.column2 .filmRight * {
+  margin-bottom: -10px;
+}
+
+main section.column2 .vsSection ~ p {
+  text-align: center;
+  margin-bottom: -4px;
+  text-decoration: none;
+}
+
+main section.column2 .vsSection ~ p a {
+  text-decoration: none;
+}
+
+main section.column2 .vsSection ~ p a:hover {
+  text-decoration: underline;
+}
+
+main section.column2 .subSection:last-of-type {
+  border-bottom: none;
+}
+
+main section.column3 {
+  grid: 3;
+}
+
+main section.column3 .list {
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main section.column3 .list ol {
+  font-size: .8em;
+  padding: 0;
+  margin: 5px 2px;
+  list-style-position: inside;
+  box-sizing: inherit;
+}
+
+main section.column3 .list ol {
+}
+
+main section.column3 .list ol li {
+  margin-bottom: 3px;
+}
+
+main section.column3 .list ol li a {
+  text-decoration: none;
+}
+
+main section.column3 .list a:hover {
+  text-decoration: underline;
+}
+
+main section.column3 .earnings {
+  float: right;
+  font-size: .8em;
+}
+
+.listMore {
+  font-family: serif;
+  font-size: .7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  align-self: flex-end;
+  margin-bottom: 2px;
+}
+
+main section.column3 .latest {
+  border-top: 1px solid #000;
+  margin-bottom: 20px;
+}
+
+main section.column3 .latest p {
+  margin: 0;
+}
+
+main section.column3 .latest a:not(.listMore) {
+  font-size: .8em;
+}
+
+main section.column3 .latest a {
+  text-decoration: none;
+}
+
+main section.column3 .latest a:hover {
+  text-decoration: underline;
+}
+
+main section.column3 .latest p:last-of-type {
+  text-align: right;
+}
+
+main section.column3 .release {
+  border-top: 1px solid #000;
+  text-transform: capitalize;
+}
+
+main section.column3 .release table {
+  font-size: .8em;
+  margin-bottom: -20px;
+}
+
+main section.column3 .release a {
+  text-decoration: none;
+}
+
+main section.column3 .release table + p {
+  text-align: right;
+}
+
+main section.column3 .release a:hover {
+  text-decoration: underline;
+}
+
+main section.column4 {
+  grid: 4;
+  width: 85%;
+}
+
+main section.column4 .showtimesTickets {
+  border-top: 1px solid #000;
+}
+
+main section.column4 img {
+  width: 60px;
+  padding-top: 10px;
+  float: left;
+}
+
+main section.column4 .showtimesTickets p:first-of-type {
+  float: left;
+  margin-left: 2px;
+}
+
+main section.column4 .showtimesTickets p a:first-of-type {
+  text-decoration: none;
+  font-size: .8em;
+  padding: 0;
+}
+
+main section.column4 .threeImages {
+  clear: both;
+}
+
+main section.column4 .threeImages p:nth-child(1) img {
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #000;
+  width: 100%;
+  height: 270px;
+}
+
+main section.column4 .threeImages p:nth-child(2) img {
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 320px;
+}
+
+main section.column4 .threeImages p:nth-child(3) img {
+  padding: 0;
+  margin-top: 10px;
+  width: 100%;
+  height: 220px;
+}
+
+main.body {
+  margin-bottom: 30px;
+}
+
+footer {
+  padding: 100px 120px;
+  background-color: #EEEEEE;
+  border-top: 1px solid #999;
+  display: flex;
+}
+
+footer div.footerList {
+  margin-top: -100px;
+  margin-right: 20px;
+  text-transform: capitalize;
+}
+
+footer div.footerList:nth-child(2) {
+  margin-right: 60px;
+}
+
+footer div.footerList p {
+  margin-bottom: -18px;
+}
+
+footer div.footerList p:first-of-type {
+  font-weight: bold;
+  font-size: .8em;
+  color: #333;
+}
+
+footer div.footerList a {
+  color: #333;
+  font-size: .8em;
+  text-decoration: none;
+}
+
+footer div.footerList a:hover {
+  text-decoration: underline;
+}
+
+footer div.footerCopy {
+  margin-left: 180px;
+  margin-top: -90px;
+  width: 320px;
+}
+
+footer div.footerCopy p:first-of-type {
+  font-size: .7em;
+  color: #666;
+  margin-top: -5px;
+}
+
+footer div.footerCopy p {
+  font-size: .59em;
+  color: #444;
+  margin-top: -5px;
+}
+
+footer div.footerCopy p:last-of-type a {
+  text-decoration: none;
+}
+
+footer div.footerCopy p:last-of-type a:hover {
+  text-decoration: underline;
+}
+
+footer div.footerCopy p a img {
+  width: 30px;
+}
+
+.loader {
+  color: dodgerblue;
+  animation:hue 10000ms infinite linear;
+}
+
+@keyframes hue{
+  0%{filter: hue-rotate(0deg);}
+  100%{filter:hue-rotate(360deg);}
+}
+
+.loaderBg {
+  background:linear-gradient(45deg,#0f8,#08f);
+  animation:hue 10000ms infinite linear;
+}
+
+@keyframes hue{
+  0%{filter: hue-rotate(0deg);}
+  100%{filter:hue-rotate(360deg);}
+}
