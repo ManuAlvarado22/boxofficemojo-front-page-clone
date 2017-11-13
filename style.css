@@ -34,6 +34,10 @@ header .topNav a:not(:last-of-type):hover {
   text-decoration: underline;
 }
 
+header .topNav a:last-of-type:hover {
+  cursor: text;
+}
+
 header main {
   display: grid;
   grid-template-columns: 27% 73%;
