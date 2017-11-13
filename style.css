@@ -30,7 +30,7 @@ header .topNav a:last-of-type {
   margin-left: auto;
 }
 
-header .topNav a:hover {
+header .topNav a:not(:last-of-type):hover {
   text-decoration: underline;
 }
 
